@@ -69,7 +69,7 @@ The dataset shows a circular separation pattern where the classes cannot be divi
 
 ## Logistic Regression Decision Boundary
 
-![Decision Boundary](./Images/Invert.png)
+![Logistic Regression](./Images/Invert.png)
 
 The logistic regression model struggles because it attempts to separate the classes using a linear boundary.
 
@@ -86,7 +86,7 @@ A Support Vector Machine with an RBF kernel was trained using GridSearchCV to tu
 
 ## SVM Decision Boundary
 
-![Decision Boundary](./Images/Decision%20Boundary.png)
+![SVM Boundary](./Images/Decision%20Boundary.png)
 
 The SVM successfully learned the circular decision boundary and perfectly separated the classes.
 
@@ -107,9 +107,13 @@ x3 = sqrt(x1² + x2²)
 
 This transformed the data into a space where the classes became linearly separable.
 
-## 3D Feature Space Visualization
+---
+
+# 3D Feature Space Visualization
 
 ![3-D Scatterplot](./Images/3-D-Scatterplot.png)
+
+The transformed feature space demonstrates how radial distance from the origin drives classification separation.
 
 ---
 
@@ -117,9 +121,9 @@ This transformed the data into a space where the classes became linearly separab
 
 ## Scatterplot of x1 vs x3
 
-![2-Predictors](./Images/2-Predictors.png)
+![2 Predictors](./Images/2-Predictors.png)
 
-The engineered feature reveals how radial distance from the origin drives class separation.
+The engineered feature reveals how non-linear data can become separable through transformation.
 
 ---
 
@@ -135,32 +139,25 @@ The engineered feature reveals how radial distance from the origin drives class 
 # Repository Structure
 
 ```text
-Support-Vector-Machine-Classification/
-│
-├── README.md
-├── Support Vector Machine Classification & Manual Feature Engineering.ipynb
-├── utils_DA.py
-│
-├── Images/
-│   ├── Scatterplot.png
-│   ├── Decision Boundary.png
-│   ├── Invert.png
-│   ├── 3-D-Scatterplot.png
-│   └── 2-Predictors.png
-│
-└── .gitignore
+data/        -> project data information
+Images/      -> visualizations and model outputs
+notebooks/   -> Jupyter notebook workflows
+reports/     -> exported PDF and HTML reports
+utils_DA.py  -> reusable helper and plotting utilities
+README.md    -> project overview and documentation
 ```
 
 ---
 
-# Future Improvements
+# Files
 
-Potential future enhancements include:
-- Adding polynomial feature transformations
-- Comparing additional kernel functions
-- Expanding hyperparameter optimization
-- Applying the workflow to real-world datasets
-- Adding interactive visualizations
+| File | Description |
+|------|-------------|
+| `notebooks/Support Vector Machine Classification & Manual Feature Engineering.ipynb` | Full SVM classification and feature engineering workflow |
+| `reports/Support Vector Machine Classification & Manual Feature Engineering.pdf` | Exported PDF project report |
+| `reports/Support Vector Machine Classification & Manual Feature Engineering.html` | Exported HTML project report |
+| `utils_DA.py` | Helper functions for plotting and visualization |
+| `Images/` | Visualizations used throughout the project |
 
 ---
 
