@@ -160,9 +160,11 @@ README.md    -> project overview and documentation
 | `Images/` | Visualizations used throughout the project |
 
 ---
+# Author
 
-# Portfolio
+Cameron Batts
 
-Portfolio Website: https://cameronbatts.github.io/
+GitHub: https://github.com/Cameron-Batts
 
-GitHub Profile: https://github.com/cameronbatts
+Portfolio: https://cameron-batts.github.io
+
